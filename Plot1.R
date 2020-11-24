@@ -5,5 +5,6 @@ period <- subset(full_table, Date %in% c("10/2/2007","11/2/2007")) # subseting t
 period$Date <- as.Date(period$Date, format="%d/%m/%Y") #setting the date format
 hist(period$Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", ylab="Frequency", col="Red") #creating histogram
 png("plot1.png", width=480, height=480)
+
 dev.off()
 
